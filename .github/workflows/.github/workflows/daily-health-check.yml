@@ -1,0 +1,13 @@
+name: Daily Health Check
+
+on:
+  schedule:
+    - cron: '0 9 * * *'
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Health Status
+        run: date
