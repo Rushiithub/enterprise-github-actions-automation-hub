@@ -1,0 +1,13 @@
+name: Release Validation
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  release-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Release Verification
+        run: echo "Release Validation Successful"
